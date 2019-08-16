@@ -41,3 +41,12 @@ Metadata MAP attributes
 
 |
 Metadata MAP attributes (referenced object metadata can be modified)
+
+## Metadata
+1. META
+1. ID
+1. PARENT
+1. VERSION
+1. `MAP protocol id`
+
+MAP attributes
