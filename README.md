@@ -1,38 +1,38 @@
 # metanet-files protocol
 
 ## 
-META
-ID
-PARENT_DIR || OP_0
-VERSION
-FILE
+1. META
+1 .ID
+1. PARENT_DIR || OP_0
+1. VERSION
+1. FILE
 | Metadata MAP attributes
 
 ## Blob
-Append to Blob
-META
-ID - repeated for each chunk
-PARENT_FILE
-SEQUENCE - must increase by 1 each chunk
-BLOB - append to blob
-<data>
-START - *optional* start position in blob to replace
-END - *optional* end position in blob to replace
+1. Append to Blob
+1. META
+1. ID - repeated for each chunk
+1. PARENT_FILE
+1. SEQUENCE - must increase by 1 each chunk
+1. BLOB - append to blob
+1. <data>
+1. START - *optional* start position in blob to replace
+1. END - *optional* end position in blob to replace. If > 0, repace START - END with blob
 
 ## Dir
-META
-ID
-PARENT_DIR || OP_0
-VERSION
-DIR
+1. META
+1. ID
+1. PARENT_DIR || OP_0
+1. VERSION
+1. DIR
 | Metadata MAP attributes
 
 ## REFERENCE
-META
-ID
-PARENT_DIR || OP_0
-VERSION
-REF | REFV
-<target node id>
-<version id> - for REFV, points to a specific version
+1. META
+1. ID
+1. PARENT_DIR || OP_0
+1. VERSION
+1. REF
+1. <target node id>
+1. <version id> - *optional* points to a specific version
 | Metadata MAP attributes (referenced object metadata can be modified)
