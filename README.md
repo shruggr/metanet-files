@@ -6,7 +6,8 @@
 1. PARENT_DIR || OP_0
 1. VERSION
 1. FILE
-`pipe`
+
+|
 Metadata MAP attributes
 
 ## BLOB
@@ -25,7 +26,8 @@ Metadata MAP attributes
 1. PARENT_DIR || OP_0
 1. VERSION
 1. DIR
-`pipe`
+
+|
 Metadata MAP attributes
 
 ## REFERENCE
@@ -36,5 +38,6 @@ Metadata MAP attributes
 1. REF
 1. `target node id`
 1. `version id` - *optional* points to a specific version
-`pipe`
+
+|
 Metadata MAP attributes (referenced object metadata can be modified)
